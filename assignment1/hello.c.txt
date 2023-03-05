@@ -1,0 +1,26 @@
+/**
+ * Programmer:yasir ali
+ * Desc: This file is just a sample on how your every file for assignments and projects must look like
+ * Date: 05/03/2023
+ * Other Related Files: header file.
+ * Assignment/Project : 1
+ **/
+
+
+ 
+
+/**
+ * @brief      this functions prints hello world in system logs  
+ *
+ * @param[in]  argc no argument
+ * @param      argv no argument
+ *
+ * @return     0
+ */
+
+#include <linux/kernel.h>
+asmlinkage long sys_hello(void) //asm linkage simply means that the argument will be on the stack instead of cpu register.
+{
+printk("Hello world\n"); //printing on system logs
+return 0; //normal termination
+}
